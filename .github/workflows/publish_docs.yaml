@@ -17,6 +17,12 @@ jobs:
         with:
           fetch-depth: 0 # CRITICAL: Required for `git describe` to work
 
+      - name: Cache Local Maven Repository
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
@@ -26,7 +32,7 @@ jobs:
 
       - name: Build Code and Javadoc
         # Injects the version dynamically just like you requested
-        run: mvn clean package javadoc:javadoc -Drevision=${{ github.event.release.tag_name }} -Dsha1= -Dchangelist=
+        run: mvn --batch-mode clean package javadoc:javadoc -Drevision=${{ github.event.release.tag_name }} -Dsha1= -Dchangelist=
 
       - name: Prepare Antora Documentation Tag
         run: |
