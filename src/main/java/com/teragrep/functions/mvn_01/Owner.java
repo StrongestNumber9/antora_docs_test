@@ -6,7 +6,7 @@ package com.teragrep.functions.mvn_01;
  * @brief Owns the animals
  *
  * @responsibilities
- * - The animals!
+ * - The animals.
  *
  * @collaborators
  * - Dog
