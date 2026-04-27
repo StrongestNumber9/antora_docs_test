@@ -41,8 +41,8 @@ jobs:
 
           # 1. Generate the dynamic antora.yml with the hardcoded version
           cat <<EOF > antora.yml
-          name: my-component
-          title: My Component
+          name: ${{ github.repository }}
+          title:${{ github.repository }}
           version: '${{ github.event.release.tag_name }}'
           nav:
             - modules/ROOT/nav.adoc
