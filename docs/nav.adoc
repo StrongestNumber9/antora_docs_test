@@ -1,2 +1,3 @@
 .Test
 * xref:antora.adoc[Test]
+* xref:modules/ROOT/index.html
