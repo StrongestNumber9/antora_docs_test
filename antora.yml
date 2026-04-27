@@ -1,5 +1,5 @@
-name: Antora test
-title: Antora test
+name: main
+title: main
 version: ~
 nav:
-  - antora.adoc
+  - index.adoc
