@@ -2,4 +2,4 @@ name: Antora test
 title: Antora test
 version: 1.0.0
 nav:
-  - antora.adoc
+  - docs/antora.adoc
