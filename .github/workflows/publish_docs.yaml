@@ -70,4 +70,4 @@ jobs:
           git commit -m "Automated docs release for ${{ github.event.release.tag_name }}"
 
           # Push this directly as a new tag (e.g., docs-1.2.3)
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:refs/tags/docs-${{ github.event.release.tag_name }}
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:refs/tags/${{ github.event.release.tag_name }}-docs
