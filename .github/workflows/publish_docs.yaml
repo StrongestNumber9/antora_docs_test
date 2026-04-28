@@ -48,7 +48,9 @@ jobs:
           ext:
             collector:
             - scan:
-                dir: api-reference/
+              scan:
+              - dir: api-reference/
+                files: '**/*'
                 into: modules/ROOT/api-reference/
           nav:
             - modules/ROOT/nav.adoc
