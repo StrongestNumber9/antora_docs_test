@@ -48,8 +48,8 @@ jobs:
           ext:
             collector:
             - scan:
-              dir: api-reference/
-              into: modules/ROOT/api-reference/
+                dir: api-reference/
+                into: modules/ROOT/api-reference/
           nav:
             - modules/ROOT/nav.adoc
           EOF
