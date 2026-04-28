@@ -47,7 +47,6 @@ jobs:
           version: '${{ github.event.release.tag_name }}'
           ext:
             collector:
-            - scan:
               scan:
               - dir: api-reference/
                 files: '**/*'
