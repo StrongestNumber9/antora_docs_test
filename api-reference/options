@@ -1,0 +1,20 @@
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/runner/work/antora_docs_test/antora_docs_test/src/main/java:/home/runner/work/antora_docs_test/antora_docs_test/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/runner/work/antora_docs_test/antora_docs_test/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'antora_project 0.0.26 API'
+-use
+-version
+-windowtitle
+'antora_project 0.0.26 API'
