@@ -1,0 +1,11 @@
+name: antora_docs_test
+title: antora_docs_test
+version: '0.0.27'
+ext:
+  collector:
+    scan:
+    - dir: api-reference/
+      files: '**/*'
+      into: modules/ROOT/api-reference/
+nav:
+  - modules/ROOT/nav.adoc
