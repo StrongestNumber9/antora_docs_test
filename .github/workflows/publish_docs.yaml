@@ -59,7 +59,7 @@ jobs:
           # 4. Copy the generated Javadoc into the Antora structure
           # Antora will serve this at: /my-component/1.2.3/api-reference/
           mkdir -p api-reference
-          cp -rv ../target/site/apidocs/* api-reference/
+          cp -rv ../target/site/apidocs/* modules/ROOT/pages/
 
       - name: Push Docs Tag to GitHub
         run: |
